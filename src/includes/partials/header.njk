@@ -1,0 +1,231 @@
+{% set pageTitle = pageTitle or title or "Dennis Snellenberg - Freelance Designer & Developer" %}
+{% set pageDescription = pageDescription or "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. sc Code by Dennis" %}
+{% set pageCanonical = pageCanonical or (permalink or "index.html") %}
+{% set pageOgImage = pageOgImage or "/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg" %}
+{% set barbaNamespace = barbaNamespace or "home" %}
+{% set mainId = mainId or "home" %}
+{% set currentPage = currentPage or barbaNamespace %}
+{% set loadingActive = loadingActive or barbaNamespace %}
+<!DOCTYPE html>
+<!--  This site was created by Dennis Snellenberg (Code by Dennis)  -->
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}" />
+    <meta property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:description" content="{{ pageDescription }}" />
+    <meta property="og:image" content="{{ pageOgImage }}" />
+    <meta property="og:site_name" content="Dennis Snellenberg" />
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content="{{ pageTitle }}" />
+    <meta property="twitter:description" content="{{ pageDescription }}" />
+    <meta property="twitter:image" content="{{ pageOgImage }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="google" content="notranslate" />
+    <meta property="og:locale" content="en" />
+    <link rel="canonical" href="{{ pageCanonical }}" />
+    <link rel="preload" as="font" href="/assets/fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link href="/assets/css/locomotive-scroll.css" rel="stylesheet">
+    <link href="/assets/css/styleguide.css" rel="stylesheet">
+    <link href="/assets/css/components.css" rel="stylesheet">
+    <link href="/assets/css/style-new.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('set', 'page', window.location.pathname);
+      gtag('send', 'pageview');
+      gtag('config', 'G-SGWQQRQ15Y');
+    </script>
+  </head>
+  <body data-barba="wrapper">
+    <div class="no-scroll-overlay"></div>
+    <div class="loading-container">
+      <div class="loading-screen">
+        <div class="rounded-div-wrap top">
+          <div class="rounded-div"></div>
+        </div>
+        <div class="loading-words">
+          <h2 class="home-active home-active-first">Hello <div class="dot"></div>
+          </h2>
+          <h2 class="home-active">Bonjour <div class="dot"></div>
+          </h2>
+          <h2 class="home-active">êÏ÷ê¤›êÏuêÏ–êÏ-êÏÏ êÏ¥ê¤Å <div class="dot"></div>
+          </h2>
+          <h2 class="home-active">Ciao <div class="dot"></div>
+          </h2>
+          <h2 class="home-active">OlÆó <div class="dot"></div>
+          </h2>
+          <h2 class="home-active jap">Ç?æÇ?" <div class="dot"></div>
+          </h2>
+          <h2 class="home-active">HallÆ¤ <div class="dot"></div>
+          </h2>
+          <h2 class="home-active">Guten tag <div class="dot"></div>
+          </h2>
+          <h2 class="home-active-last">Hallo <div class="dot"></div>
+          </h2>
+          <h2 class="{% if loadingActive == 'home' %}active{% endif %}">Home <div class="dot"></div>
+          </h2>
+          <h2 class="{% if loadingActive == 'work' %}active{% endif %}">Work <div class="dot"></div>
+          </h2>
+          <h2>TWICE <div class="dot"></div>
+          </h2>
+          <h2>The Damai <div class="dot"></div>
+          </h2>
+          <h2>FABRIC&trade; <div class="dot"></div>
+          </h2>
+          <h2>Aanstekelijk <div class="dot"></div>
+          </h2>
+          <h2>Base Create <div class="dot"></div>
+          </h2>
+          <h2>AVVR <div class="dot"></div>
+          </h2>
+          <h2>GraphicHunters <div class="dot"></div>
+          </h2>
+          <h2>Future Goals <div class="dot"></div>
+          </h2>
+          <h2>Atypikal <div class="dot"></div>
+          </h2>
+          <h2>One:Nil <div class="dot"></div>
+          </h2>
+          <h2>Andy Hardy <div class="dot"></div>
+          </h2>
+          <h2 class="{% if loadingActive == 'about' %}active{% endif %}">About <div class="dot"></div>
+          </h2>
+          <h2 class="{% if loadingActive == 'contact' %}active{% endif %}">Contact <div class="dot"></div>
+          </h2>
+          <h2>Success <div class="dot"></div>
+          </h2>
+          <h2 class="{% if loadingActive == 'archive' %}active{% endif %}">Archive <div class="dot"></div>
+          </h2>
+          <h2>Error <div class="dot"></div>
+          </h2>
+          <h2>Styleguide <div class="dot"></div>
+          </h2>
+        </div>
+        <div class="rounded-div-wrap bottom">
+          <div class="rounded-div"></div>
+        </div>
+      </div>
+    </div>
+    <main class="main" id="{{ mainId }}" data-barba="container" data-barba-namespace="{{ barbaNamespace }}">
+      <div class="mouse-pos-list-image no-select">
+        <div class="mouse-pos-list-image-bounce overlay">
+          <div class="float-image-wrap">
+            <li class="mouse-pos-list-image-inner development interaction visible">
+              <div class="overlay overlay-image lazy" style="background-color: #F1F1F1; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/twice/0ab7e43954-1710404752/thumbnail-twice-810x810-crop-q72.jpg"></div>
+            </li>
+            <li class="mouse-pos-list-image-inner design development interaction visible">
+              <div class="overlay overlay-image lazy" style="background-color: #E0D9D1; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/the-damai/b511d32d21-1710452224/thumbnail-thedamai-v2-810x810-crop-q72.jpg"></div>
+            </li>
+            <li class="mouse-pos-list-image-inner design development interaction visible">
+              <div class="overlay overlay-image lazy" style="background-color: #48494A; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/fabric/ac07564a5f-1688453092/thumbnail-fabric-darkgray-810x810-crop-q72.jpg"></div>
+            </li>
+            <li class="mouse-pos-list-image-inner design development interaction visible">
+              <div class="overlay overlay-image lazy" style="background-color: #101010; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/aanstekelijk/441187fb44-1687423090/thumbnail-aanstekelijk-810x810-crop-q72.jpg"></div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="mouse-pos-list-btn no-select"></div>
+      <div class="mouse-pos-list-span no-select">
+        <p>View</p>
+      </div>
+      <div class="btn btn-hamburger">
+        <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
+          <div class="btn-fill"></div>
+          <div class="btn-text">
+            <div class="btn-bars"></div>
+            <span class="btn-text-inner">Menu</span>
+          </div>
+        </div>
+      </div>
+      <div class="overlay fixed-nav-back"></div>
+      <div class="fixed-nav theme-dark">
+        <div class="fixed-nav-rounded-div">
+          <div class="rounded-div-wrap">
+            <div class="rounded-div"></div>
+          </div>
+        </div>
+        <div class="fixed-nav-inner">
+          <div class="row nav-row">
+            <h5>Navigation</h5>
+            <div class="stripe"></div>
+            <ul class="links-wrap">
+              <li class="btn btn-link{% if currentPage == 'home' %} active{% endif %}">
+                <a href="/index.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">Home</span>
+                  </span>
+                </a>
+              </li>
+              <li class="btn btn-link{% if currentPage == 'work' %} active{% endif %}">
+                <a href="/work.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">Work</span>
+                  </span>
+                </a>
+              </li>
+              <li class="btn btn-link{% if currentPage == 'about' %} active{% endif %}">
+                <a href="/about.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">About</span>
+                  </span>
+                </a>
+              </li>
+              <li class="btn btn-link{% if currentPage == 'contact' %} active{% endif %}">
+                <a href="/contact.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">Contact</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="row social-row">
+            <div class="stripe"></div>
+            <div class="socials">
+              <h5>Socials</h5>
+              <ul>
+                <li class="btn btn-link btn-link-external">
+                  <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Awwwards</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link btn-link-external">
+                  <a href="https://www.instagram.com/codebydennis/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Instagram</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link btn-link-external">
+                  <a href="https://twitter.com/codebydennis" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Twitter</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link btn-link-external">
+                  <a href="https://www.linkedin.com/in/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <span class="btn-text">
+                      <span class="btn-text-inner">LinkedIn</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
