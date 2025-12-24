@@ -1,5 +1,5 @@
 ---
-title: "Hotel Moment"
+title: "Call Your Soul"
 href: "/work/angliki.html"
 role: "Projekt i kodowanie"
 year: 2025

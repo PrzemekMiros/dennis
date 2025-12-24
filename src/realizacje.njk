@@ -1,64 +1,16 @@
 --- 
 title: "Realizacje" 
 loadingLabel: "Realizacje"
-permalink: "/work.html" 
+permalink: "/realizacje.html"
+currentPage: "realizacje"
+barbaNamespace: "realizacje"
 --- 
 
 {% include "partials/header.njk" %} 
 
 <div class="main-wrap" data-scroll-container>
   <header class="section default-header work-header" data-scroll-section>
-    <div class="nav-bar">
-      <div class="credits-top">
-        <div class="btn btn-link btn-left-top">
-          <a href="index.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-            <span class="btn-text">
-              <div class="credit">
-                <span>©</span>
-              </div>
-              <div class="cbd">
-                <span class="code-by">Code by </span>
-                <span class="dennis">
-                  <span class="dennis-span">Przemek</span>
-                  <span class="snellenberg">Miros</span>
-                </span>
-            </span>
-        </div>
-        </span>
-        </a>
-      </div>
-    </div>
-    <ul class="links-wrap">
-      <li class="btn btn-link active">
-        <a href="work.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-          <span class="btn-text">
-            <span class="btn-text-inner">Work</span>
-          </span>
-        </a>
-      </li>
-      <li class="btn btn-link">
-        <a href="about.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-          <span class="btn-text">
-            <span class="btn-text-inner">About</span>
-          </span>
-        </a>
-      </li>
-      <li class="btn btn-link">
-        <a href="contact.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-          <span class="btn-text">
-            <span class="btn-text-inner">Contact</span>
-          </span>
-        </a>
-      </li>
-      <li class="btn btn-link btn-menu">
-        <div class="btn-click magnetic" data-strength="20" data-strength-text="10">
-          <div class="btn-text">
-            <span class="btn-text-inner">Menu</span>
-          </div>
-        </div>
-      </li>
-    </ul>
-</div>
+    {% include "partials/page-nav.njk" %}
 <div class="container medium">
   <div class="row">
     <div class="flex-col once-in">
@@ -70,6 +22,11 @@ permalink: "/work.html"
   </div>
 </div>
 </header>
+{% set worksList = worksList or collections.works or [] %}
+{% set countAll = worksList | length %}
+{% set countWww = worksList | selectattr("data.category","equalto","Strony www") | list | length %}
+{% set countEcom = worksList | selectattr("data.category","equalto","Ecommerce") | list | length %}
+
 <section class="section work-filters" data-scroll-section>
   <div class="container once-in">
     <div class="filter-row">
@@ -86,7 +43,7 @@ permalink: "/work.html"
           <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
             <div class="btn-fill"></div>
             <span class="btn-text">
-              <span class="btn-text-inner change">Strony www <div class="count-nr">7</div>
+              <span class="btn-text-inner change">Strony www <div class="count-nr">{{ countWww }}</div>
               </span>
             </span>
           </div>
@@ -95,7 +52,7 @@ permalink: "/work.html"
           <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
             <div class="btn-fill"></div>
             <span class="btn-text">
-              <span class="btn-text-inner change">Ecommerce <div class="count-nr">11</div>
+              <span class="btn-text-inner change">Ecommerce <div class="count-nr">{{ countEcom }}</div>
               </span>
             </span>
           </div>
@@ -139,16 +96,16 @@ permalink: "/work.html"
     <div class="container">
       <div class="grid-sub-title">
         <div class="flex-col">
-          <h5>Client</h5>
+          <h5>Klient</h5>
         </div>
         <div class="flex-col">
-          <h5>Location</h5>
+          <h5></h5>
         </div>
         <div class="flex-col">
-          <h5>Services</h5>
+          <h5>Usługa</h5>
         </div>
         <div class="flex-col">
-          <h5>Year</h5>
+          <h5>Rok</h5>
         </div>
       </div>
       {% set worksList = collections.works or [] %}
@@ -211,22 +168,8 @@ permalink: "/work.html"
       </ul>
     </div>
   </section>
-{% set archiveCount = (collections.works or []) | length %}
-</section>
-<section class="section center-grid-btn center-grid-btn-archive" data-scroll-section>
-  <div class="container">
-    <div class="grid-after-btn">
-      <div class="btn btn-normal btn-dark">
-        <a href="archive.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
-          <div class="btn-fill"></div>
-          <span class="btn-text">
-            <span class="btn-text-inner change">Archive <div class="count-nr">{{ archiveCount }}</div>
-            </span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
 </section>
 
+
 {% include "partials/footer.njk" %} 
+

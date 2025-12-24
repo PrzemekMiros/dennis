@@ -1,9 +1,9 @@
 ---
-title: "Hotel Moment"
+title: "Ideal Lift"
 href: "/work/angliki.html"
 role: "Projekt i kodowanie"
 year: 2025
-tileImage: "/content/works/img/moment-thumb-big.jpg"
+tileImage: "/content/works/img/idealift-thumb-big.jpg"
 tileBg: "#FFFFFF"
 classes:
   - design

@@ -1,12 +1,12 @@
 ---
-title: "Hotel Moment"
+title: "EGP System"
 href: "/work/angliki.html"
-role: "Projekt i kodowanie"
+role: "Sklep i integracje"
 year: 2025
-tileImage: "/content/works/img/moment-thumb-big.jpg"
+tileImage: "/content/works/img/egp-thumb-big.jpg"
 tileBg: "#FFFFFF"
 classes:
-  - design
+  - development
   - interaction
   - visible
 order: 5

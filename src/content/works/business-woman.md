@@ -6,7 +6,7 @@ year: 2024
 tileImage: "content/works/img/business-thumb-big.jpg"
 tileBg: "#F1F1F1"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 1

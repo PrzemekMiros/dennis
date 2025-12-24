@@ -1,9 +1,9 @@
 ---
-title: "Hotel Moment"
+title: "CSE Dental"
 href: "/work/angliki.html"
-role: "Projekt i kodowanie"
+role: "Kodowanie i pozycjonowanie"
 year: 2025
-tileImage: "/content/works/img/moment-thumb-big.jpg"
+tileImage: "/content/works/img/cse-thumb-big.jpg"
 tileBg: "#FFFFFF"
 classes:
   - design

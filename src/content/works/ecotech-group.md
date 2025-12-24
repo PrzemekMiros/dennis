@@ -5,9 +5,9 @@ role: "Strona www i pozycjonowanie"
 year: 2020
 tileImage: "/content/works/img/ecotech-thumb-big.jpg"
 tileBg: "#E0D9D1"
+category: "Strony www"
 classes:
   - design
-  - development
   - interaction
   - visible
 order: 2

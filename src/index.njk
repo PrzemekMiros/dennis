@@ -1,7 +1,6 @@
 --- 
 title: "Freelance Designer & Developer" 
 loadingLabel: "Główna"
-permalink: "/index.html" 
 ---
 
 {% include "partials/header.njk" %}
@@ -67,21 +66,21 @@ permalink: "/index.html"
           </div>
           <ul class="links-wrap">
             <li class="btn btn-link">
-              <a href="work.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+              <a href="realizacje.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                 <span class="btn-text">
                   <span class="btn-text-inner">Realizacje</span>
                 </span>
               </a>
             </li>
             <li class="btn btn-link">
-              <a href="about.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+              <a href="o-mnie.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                 <span class="btn-text">
                   <span class="btn-text-inner">O mnie</span>
                 </span>
               </a>
             </li>
             <li class="btn btn-link">
-              <a href="contact.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+              <a href="kontakt.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                 <span class="btn-text">
                   <span class="btn-text-inner">Kontakt</span>
                 </span>
@@ -213,21 +212,24 @@ permalink: "/index.html"
           </ul>
         </div>
       </section>
-      <section class="section center-grid-btn center-grid-btn-home" data-scroll-section>
-        <div class="container">
-          <div class="grid-after-btn">
-            <div class="btn btn-normal">
-              <a href="work.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
-                <div class="btn-fill"></div>
-                <span class="btn-text">
-                  <span class="btn-text-inner change">Więcej realizacji <div class="count-nr">41</div>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      {% set archiveCount = (collections.works or []) | length %}
+<section class="section center-grid-btn center-grid-btn-home" data-scroll-section>
+  <div class="container">
+    <div class="grid-after-btn">
+      <div class="btn btn-normal btn-dark">
+        <a href="realizacje.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+          <div class="btn-fill"></div>
+          <span class="btn-text">
+            <span class="btn-text-inner change">Zobacz więcej <div class="count-nr">{{ archiveCount }}</div>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section class="section horizontal-items" data-scroll-section>
         <div class="container">
           <div class="row row-1" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">

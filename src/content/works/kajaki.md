@@ -1,9 +1,9 @@
 ---
-title: "Hotel Moment"
+title: "Kajaki24 "
 href: "/work/angliki.html"
 role: "Projekt i kodowanie"
 year: 2025
-tileImage: "/content/works/img/moment-thumb-big.jpg"
+tileImage: "/content/works/img/kajaki-thumb-big.jpg"
 tileBg: "#FFFFFF"
 classes:
   - design

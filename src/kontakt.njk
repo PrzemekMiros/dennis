@@ -1,72 +1,24 @@
 --- 
 title: "Kontakt" 
 loadingLabel: "Kontakt"
-permalink: "/contact.html" 
----
+permalink: "/kontakt.html"
+currentPage: "kontakt"
+barbaNamespace: "kontakt"
+--- 
 
 {% include "partials/header.njk" %}
 
-      <div class="main-wrap" data-scroll-container>
-        <header class="section default-header contact-header theme-dark" data-scroll-section>
-          <div class="nav-bar">
-            <div class="credits-top">
-              <div class="btn btn-link btn-left-top">
-                <a href="index.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                  <span class="btn-text">
-                    <div class="credit">
-                      <span>©</span>
-                    </div>
-                    <div class="cbd">
-                      <span class="code-by">Code by </span>
-                      <span class="dennis">
-                        <span class="dennis-span">Dennis</span>
-                        <span class="snellenberg">Snellenberg</span>
-                      </span>
-                  </span>
-              </div>
-              </span>
-              </a>
-            </div>
-          </div>
-          <ul class="links-wrap">
-            <li class="btn btn-link">
-              <a href="work.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                <span class="btn-text">
-                  <span class="btn-text-inner">Work</span>
-                </span>
-              </a>
-            </li>
-            <li class="btn btn-link">
-              <a href="about.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                <span class="btn-text">
-                  <span class="btn-text-inner">About</span>
-                </span>
-              </a>
-            </li>
-            <li class="btn btn-link active">
-              <a href="contact.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                <span class="btn-text">
-                  <span class="btn-text-inner">Contact</span>
-                </span>
-              </a>
-            </li>
-            <li class="btn btn-link btn-menu">
-              <div class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                <div class="btn-text">
-                  <span class="btn-text-inner">Menu</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-      </div>
-      <div class="container medium">
+<div class="main-wrap" data-scroll-container>
+  <header class="section default-header contact-header theme-dark" data-scroll-section>
+    {% include "partials/page-nav.njk" %}
+    <div class="container medium">
         <div class="row once-in">
           <div class="flex-col">
             <h1>
               <span>
-                <div class="profile-picture"></div> Let's start a
+                <div class="profile-picture"></div> Zacznijmy
               </span>
-              <span>project together</span>
+              <span>współpracę</span>
             </h1>
           </div>
           <div class="flex-col">
@@ -91,40 +43,40 @@ permalink: "/contact.html"
           <div class="flex-col">
             <form class="form" method="post" action="https://dennissnellenberg.com/contact" enctype="multipart/form-data" novalidate>
               <div class="website-field">
-                <label class="label" for="tel">Phone Number</label>
+                <label class="label" for="tel">Numer telefonu</label>
                 <input class="field" type="text" id="form-tel" name="tel" tabindex="-1">
               </div>
               <div class="form-col">
                 <h5>01</h5>
-                <label class="label" for="name">What's your name?</label>
-                <input class="field" type="text" id="form-name" name="name" value="" required placeholder="John Doe *">
+                <label class="label" for="name">Jak masz na imię?</label>
+                <input class="field" type="text" id="form-name" name="name" value="" required placeholder="Jan Kowalski *">
               </div>
               <div class="form-col">
                 <h5>02</h5>
-                <label class="label" for="email">What's your email?</label>
-                <input class="field" type="email" id="form-email" name="email" value="" required placeholder="john@doe.com *">
+                <label class="label" for="email">Wpisz swój adres email</label>
+                <input class="field" type="email" id="form-email" name="email" value="" required placeholder="jan@kowalski.pl *">
               </div>
               <div class="form-col">
                 <h5>03</h5>
-                <label class="label" for="email">What's the name of your organization?</label>
-                <input class="field" type="text" id="form-company" name="company" value="" required placeholder="John & Doe ®">
+                <label class="label" for="email">Podaj nazwę firmy</label>
+                <input class="field" type="text" id="form-company" name="company" value="" required placeholder="Firma X ®">
               </div>
               <div class="form-col">
                 <h5>04</h5>
-                <label class="label" for="email">What services are you looking for?</label>
-                <input class="field" type="text" id="form-service" name="service" value="" required placeholder="Web Design, Web Development ...">
+                <label class="label" for="email">Jakich usług szukasz?</label>
+                <input class="field" type="text" id="form-service" name="service" value="" required placeholder="Stworzenie strony www ...">
               </div>
               <div class="form-col">
                 <h5>05</h5>
-                <label class="label" for="message">Your message</label>
-                <textarea class="field" type="text" id="form-message" name="message" rows="8" required placeholder="Hello Dennis, can you help me with ... *"></textarea>
+                <label class="label" for="message">Twoja wiadomość</label>
+                <textarea class="field" type="text" id="form-message" name="message" rows="8" required placeholder="Cześć Przemek, możesz mi pomóc w... *"></textarea>
               </div>
               <div class="btn-contact-send">
                 <div class="btn btn-round" data-scroll data-scroll-speed="2" data-scroll-offset="-50%, 0%">
                   <div class="btn-click magnetic" data-strength="100" data-strength-text="50">
                     <div class="btn-fill"></div>
                     <span class="btn-text">
-                      <input type="submit" name="submit" value="Send it!" class="form-btn">
+                      <input type="submit" name="submit" value="Wyślij!" class="form-btn">
                     </span>
                   </div>
                 </div>
@@ -132,65 +84,59 @@ permalink: "/contact.html"
             </form>
           </div>
           <div class="flex-col">
-            <h5>Contact Details</h5>
+            <h5>Dane kontaktowe</h5>
             <ul class="links-wrap">
               <li class="btn btn-link btn-link-external">
-                <a href="mailto:info@dennissnellenberg.com" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                <a href="mailto:kontakt@przemekmiros.pl" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
-                    <span class="btn-text-inner">info@dennissnellenberg.com</span>
+                    <span class="btn-text-inner">kontakt@przemekmiros.pl</span>
                   </span>
                 </a>
               </li>
               <li class="btn btn-link btn-link-external">
                 <a href="tel:+31627847430" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
-                    <span class="btn-text-inner">+31 6 27 84 74 30</span>
+                    <span class="btn-text-inner">+48 788 660 190</span>
                   </span>
                 </a>
               </li>
             </ul>
-            <h5>Business Details</h5>
+            <h5>Lokalizacja</h5>
             <ul class="links-wrap">
               <li>
-                <p>Dennis Snellenberg B.V.</p>
+                <p>Przemek Miros</p>
               </li>
               <li>
-                <p>CoC: 92411711</p>
-              </li>
-              <li>
-                <p>VAT: NL866034080B01</p>
-              </li>
-              <li>
-                <p>Location: The Netherlands</p>
+                <p>05-800 Pruszków</p>
               </li>
             </ul>
-            <h5>Socials</h5>
+            <h5>Media</h5>
             <ul class="links-wrap">
               <li class="btn btn-link btn-link-external">
                 <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
-                    <span class="btn-text-inner">Awwwards</span>
+                    <span class="btn-text-inner">Facebook</span>
                   </span>
                 </a>
               </li>
               <li class="btn btn-link btn-link-external">
                 <a href="https://www.instagram.com/codebydennis/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
-                    <span class="btn-text-inner">Instagram</span>
+                    <span class="btn-text-inner">Behance</span>
                   </span>
                 </a>
               </li>
               <li class="btn btn-link btn-link-external">
                 <a href="https://twitter.com/codebydennis" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
-                    <span class="btn-text-inner">Twitter</span>
+                    <span class="btn-text-inner">Github</span>
                   </span>
                 </a>
               </li>
               <li class="btn btn-link btn-link-external">
                 <a href="https://www.linkedin.com/in/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
-                    <span class="btn-text-inner">LinkedIn</span>
+                    <span class="btn-text-inner">Codepen</span>
                   </span>
                 </a>
               </li>
@@ -204,8 +150,8 @@ permalink: "/contact.html"
           <div class="row bottom-footer">
             <div class="flex-col">
               <div class="credits">
-                <h5>Version</h5>
-                <p>2022 © Edition</p>
+                <h5>Przemek Miros</h5>
+                <p>2022 © Wszelkie prawa zastrzeżone</p>
               </div>
               <div class="time">
                 <h5>Local time</h5>
@@ -216,33 +162,33 @@ permalink: "/contact.html"
             </div>
             <div class="flex-col">
               <div class="socials">
-                <h5>Socials</h5>
+                <h5>Media</h5>
                 <ul>
                   <li class="btn btn-link btn-link-external">
                     <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
-                        <span class="btn-text-inner">Awwwards</span>
+                        <span class="btn-text-inner">Facebook</span>
                       </span>
                     </a>
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a href="https://www.instagram.com/codebydennis/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
-                        <span class="btn-text-inner">Instagram</span>
+                        <span class="btn-text-inner">Behance</span>
                       </span>
                     </a>
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a href="https://twitter.com/codebydennis" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
-                        <span class="btn-text-inner">Twitter</span>
+                        <span class="btn-text-inner">Github</span>
                       </span>
                     </a>
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a href="https://www.linkedin.com/in/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
-                        <span class="btn-text-inner">LinkedIn</span>
+                        <span class="btn-text-inner">Codepen</span>
                       </span>
                     </a>
                   </li>
@@ -268,3 +214,4 @@ permalink: "/contact.html"
   </body>
 
 </html>
+
