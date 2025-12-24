@@ -743,7 +743,8 @@ main.touch .main-wrap {
    top: -10%;
    width: 100%;
    height: 110%;
-   background: var(--color-gray);
+   background: url("/assets/img/bg.png");
+   opacity: .88;
 }
 
 .home-header .personal-image img {
@@ -807,7 +808,7 @@ main.touch .main-wrap {
 }
 
 .home-header .row .flex-col .header-above-h4 {
-   top: -12.5vh;
+   top: -10.5vh;
    position: absolute;
 }
 
