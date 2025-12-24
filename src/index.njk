@@ -162,7 +162,7 @@ loadingLabel: "Główna"
             <!-- <div class="flex-col"><h5>Services</h5></div> -->
           </div>
           <ul class="work-items mouse-pos-list-image-wrap">
-            {% for work in works %}
+            {% for work in works.slice(0, 5) %}
             <li class="{{ (work.data.classes or []) | join(' ') }}">
               <div class="stripe animate"></div>
               <a href="{{ work.data.href }}" class="row">
@@ -184,7 +184,7 @@ loadingLabel: "Główna"
       <section class="section work-tiles work-tiles-home" data-scroll-section>
         <div class="container">
           <ul>
-            {% for work in works %}
+            {% for work in works.slice(0, 5) %}
             <li class="{{ (work.data.classes or []) | join(' ') }}">
               <div class="single-tile-wrap">
                 <a href="{{ work.data.href }}" class="row">
