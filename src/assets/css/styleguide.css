@@ -716,7 +716,7 @@ video.overlay {
     transition: var(--animation-primary);
     top: 0;
     left: 0;
-    transform: translateX(3.25em);
+    transform: translateX(4.05em);
     white-space: nowrap;
 }
 

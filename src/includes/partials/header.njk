@@ -1,4 +1,4 @@
-{% set pageTitle = pageTitle or title or "Dennis Snellenberg - Freelance Designer & Developer" %}
+
 {% set pageDescription = pageDescription or "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. sc Code by Dennis" %}
 {% set pageCanonical = pageCanonical or (permalink or "index.html") %}
 {% set pageOgImage = pageOgImage or "/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg" %}
@@ -6,14 +6,15 @@
 {% set mainId = mainId or "home" %}
 {% set currentPage = currentPage or barbaNamespace %}
 {% set loadingActive = loadingActive or barbaNamespace %}
+{% set loadingLabel = loadingLabel or title or "Ładuję" %}
 <!DOCTYPE html>
-<!--  This site was created by Dennis Snellenberg (Code by Dennis)  -->
-<html lang="en">
+
+<html lang="pl">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ pageTitle }}</title>
+    <title>{{ title }} - Przemek Miros</title>
     <meta name="description" content="{{ pageDescription }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
     <meta property="og:description" content="{{ pageDescription }}" />
@@ -34,18 +35,7 @@
     <link href="/assets/css/styleguide.css" rel="stylesheet">
     <link href="/assets/css/components.css" rel="stylesheet">
     <link href="/assets/css/style-new.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('set', 'page', window.location.pathname);
-      gtag('send', 'pageview');
-      gtag('config', 'G-SGWQQRQ15Y');
-    </script>
+    
   </head>
   <body data-barba="wrapper">
     <div class="no-scroll-overlay"></div>
@@ -55,27 +45,21 @@
           <div class="rounded-div"></div>
         </div>
         <div class="loading-words">
-          <h2 class="home-active home-active-first">Hello <div class="dot"></div>
+          <h2 class="home-active home-active-first">Cześć <div class="dot"></div>
           </h2>
           <h2 class="home-active">Bonjour <div class="dot"></div>
-          </h2>
-          <h2 class="home-active">êÏ÷ê¤›êÏuêÏ–êÏ-êÏÏ êÏ¥ê¤Å <div class="dot"></div>
           </h2>
           <h2 class="home-active">Ciao <div class="dot"></div>
           </h2>
           <h2 class="home-active">OlÆó <div class="dot"></div>
           </h2>
-          <h2 class="home-active jap">Ç?æÇ?" <div class="dot"></div>
-          </h2>
-          <h2 class="home-active">HallÆ¤ <div class="dot"></div>
-          </h2>
           <h2 class="home-active">Guten tag <div class="dot"></div>
           </h2>
           <h2 class="home-active-last">Hallo <div class="dot"></div>
           </h2>
-          <h2 class="{% if loadingActive == 'home' %}active{% endif %}">Home <div class="dot"></div>
+          <h2 class="active">{{ loadingLabel }} <div class="dot"></div>
           </h2>
-          <h2 class="{% if loadingActive == 'work' %}active{% endif %}">Work <div class="dot"></div>
+          <h2>Work <div class="dot"></div>
           </h2>
           <h2>TWICE <div class="dot"></div>
           </h2>
@@ -99,13 +83,13 @@
           </h2>
           <h2>Andy Hardy <div class="dot"></div>
           </h2>
-          <h2 class="{% if loadingActive == 'about' %}active{% endif %}">About <div class="dot"></div>
+          <h2>About <div class="dot"></div>
           </h2>
-          <h2 class="{% if loadingActive == 'contact' %}active{% endif %}">Contact <div class="dot"></div>
+          <h2>Contact <div class="dot"></div>
           </h2>
           <h2>Success <div class="dot"></div>
           </h2>
-          <h2 class="{% if loadingActive == 'archive' %}active{% endif %}">Archive <div class="dot"></div>
+          <h2>Archive <div class="dot"></div>
           </h2>
           <h2>Error <div class="dot"></div>
           </h2>
@@ -118,21 +102,19 @@
       </div>
     </div>
     <main class="main" id="{{ mainId }}" data-barba="container" data-barba-namespace="{{ barbaNamespace }}">
+      {% set works = works or collections.works %}
       <div class="mouse-pos-list-image no-select">
         <div class="mouse-pos-list-image-bounce overlay">
           <div class="float-image-wrap">
-            <li class="mouse-pos-list-image-inner development interaction visible">
-              <div class="overlay overlay-image lazy" style="background-color: #F1F1F1; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/twice/0ab7e43954-1710404752/thumbnail-twice-810x810-crop-q72.jpg"></div>
+            {% for work in works %}
+            <li class="mouse-pos-list-image-inner {{ (work.data.classes or []) | join(' ') }}">
+              <div
+                class="overlay overlay-image lazy"
+                style="background-color: {{ work.data.tileBg or '#fff' }}; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                data-bg="{{ work.data.hoverImage or work.data.tileImage }}"
+              ></div>
             </li>
-            <li class="mouse-pos-list-image-inner design development interaction visible">
-              <div class="overlay overlay-image lazy" style="background-color: #E0D9D1; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/the-damai/b511d32d21-1710452224/thumbnail-thedamai-v2-810x810-crop-q72.jpg"></div>
-            </li>
-            <li class="mouse-pos-list-image-inner design development interaction visible">
-              <div class="overlay overlay-image lazy" style="background-color: #48494A; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/fabric/ac07564a5f-1688453092/thumbnail-fabric-darkgray-810x810-crop-q72.jpg"></div>
-            </li>
-            <li class="mouse-pos-list-image-inner design development interaction visible">
-              <div class="overlay overlay-image lazy" style="background-color: #101010; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="/media/pages/work/aanstekelijk/441187fb44-1687423090/thumbnail-aanstekelijk-810x810-crop-q72.jpg"></div>
-            </li>
+            {% endfor %}
           </div>
         </div>
       </div>

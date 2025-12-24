@@ -1,5 +1,6 @@
 --- 
-title: "Work - Dennis Snellenberg" 
+title: "Realizacje" 
+loadingLabel: "Realizacje"
 permalink: "/work.html" 
 --- 
 
@@ -18,8 +19,8 @@ permalink: "/work.html"
               <div class="cbd">
                 <span class="code-by">Code by </span>
                 <span class="dennis">
-                  <span class="dennis-span">Dennis</span>
-                  <span class="snellenberg">Snellenberg</span>
+                  <span class="dennis-span">Przemek</span>
+                  <span class="snellenberg">Miros</span>
                 </span>
             </span>
         </div>
@@ -62,8 +63,8 @@ permalink: "/work.html"
   <div class="row">
     <div class="flex-col once-in">
       <h1>
-        <span>Creating next level </span>
-        <span>digital products</span>
+        <span>Zobacz moje </span>
+        <span>wybrane realizacje</span>
       </h1>
     </div>
   </div>
@@ -77,7 +78,7 @@ permalink: "/work.html"
           <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
             <div class="btn-fill"></div>
             <span class="btn-text">
-              <span class="btn-text-inner change">All</span>
+              <span class="btn-text-inner change">Wszystkie</span>
             </span>
           </div>
         </div>
@@ -85,7 +86,7 @@ permalink: "/work.html"
           <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
             <div class="btn-fill"></div>
             <span class="btn-text">
-              <span class="btn-text-inner change">Design <div class="count-nr">7</div>
+              <span class="btn-text-inner change">Strony www <div class="count-nr">7</div>
               </span>
             </span>
           </div>
@@ -94,7 +95,7 @@ permalink: "/work.html"
           <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
             <div class="btn-fill"></div>
             <span class="btn-text">
-              <span class="btn-text-inner change">Development <div class="count-nr">11</div>
+              <span class="btn-text-inner change">Ecommerce <div class="count-nr">11</div>
               </span>
             </span>
           </div>
@@ -150,490 +151,67 @@ permalink: "/work.html"
           <h5>Year</h5>
         </div>
       </div>
+      {% set worksList = collections.works or [] %}
       <ul class="work-items mouse-pos-list-image-wrap all-active">
-        <li class="development interaction visible">
+        {% for work in worksList %}
+        <li class="{{ (work.data.classes or []) | join(' ') }}">
           <div class="stripe animate"></div>
-          <a href="work/twice.html" class="row">
+          <a href="{{ work.data.href }}" class="row">
             <div class="flex-col">
               <h4>
-                <span>TWICE</span>
+                <span>{{ work.data.tileTitle or work.data.title }}</span>
               </h4>
             </div>
             <div class="flex-col animate">
-              <p>Spain</p>
+              <p>{{ work.data.location }}</p>
             </div>
             <div class="flex-col animate">
-              <p>Interaction & Development</p>
+              <p>{{ work.data.role }}</p>
             </div>
             <div class="flex-col animate">
-              <p>2024</p>
+              <p>{{ work.data.year }}</p>
             </div>
           </a>
         </li>
-        <li class="design development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/the-damai.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>The Damai</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>Bali, Indonesia</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2024</p>
-            </div>
-          </a>
-        </li>
-        <li class="design development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/fabric.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>FABRIC™</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>United Kingdom</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2023</p>
-            </div>
-          </a>
-        </li>
-        <li class="design development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/aanstekelijk.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>Aanstekelijk</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>The Netherlands</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2023</p>
-            </div>
-          </a>
-        </li>
-        <li class="development interaction design visible">
-          <div class="stripe animate"></div>
-          <a href="work/base-create.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>Base Create</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>Hong Kong</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2023</p>
-            </div>
-          </a>
-        </li>
-        <li class="design development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/avvr.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>AVVR</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>The Netherlands</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2023</p>
-            </div>
-          </a>
-        </li>
-        <li class="design development visible">
-          <div class="stripe animate"></div>
-          <a href="work/graphichunters.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>GraphicHunters</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>The Netherlands</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2022</p>
-            </div>
-          </a>
-        </li>
-        <li class="development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/future-goals.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>Future Goals</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>Curaçao</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Interaction & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2022</p>
-            </div>
-          </a>
-        </li>
-        <li class="development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/atypikal.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>Atypikal</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>United States</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Interaction & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2021</p>
-            </div>
-          </a>
-        </li>
-        <li class="development interaction visible">
-          <div class="stripe animate"></div>
-          <a href="work/one-nil.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>One:Nil</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>The Netherlands</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Interaction & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2021</p>
-            </div>
-          </a>
-        </li>
-        <li class="design development visible">
-          <div class="stripe animate"></div>
-          <a href="work/andy-hardy.html" class="row">
-            <div class="flex-col">
-              <h4>
-                <span>Andy Hardy</span>
-              </h4>
-            </div>
-            <div class="flex-col animate">
-              <p>Australia</p>
-            </div>
-            <div class="flex-col animate">
-              <p>Design & Development</p>
-            </div>
-            <div class="flex-col animate">
-              <p>2020</p>
-            </div>
-          </a>
-        </li>
+        {% endfor %}
         <div class="stripe last animate"></div>
       </ul>
     </div>
   </section>
   <section class="section work-tiles grid-fade grid-columns-part">
     <div class="container">
+      {% set worksList = worksList or collections.works or [] %}
       <ul>
-        <li class="development interaction visible">
+        {% for work in worksList %}
+        <li class="{{ (work.data.classes or []) | join(' ') }}">
           <div class="single-tile-wrap">
-            <a href="work/twice.html" class="row">
+            <a href="{{ work.data.href }}" class="row">
               <div class="flex-col">
                 <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #F1F1F1;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/twice/0ab7e43954-1710404752/thumbnail-twice.jpg"></div>
+                  <div class="overlay overlay-color" style="background-color: {{ work.data.tileBg or '#F1F1F1' }};"></div>
+                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="{{ work.data.tileImage }}"></div>
                 </div>
               </div>
               <div class="flex-col">
                 <h4>
-                  <span>TWICE</span>
+                  <span>{{ work.data.tileTitle or work.data.title }}</span>
                 </h4>
                 <div class="stripe"></div>
               </div>
               <div class="flex-col">
-                <p>Interaction & Development</p>
+                <p>{{ work.data.role }}</p>
               </div>
               <div class="flex-col">
-                <p>2024</p>
+                <p>{{ work.data.year }}</p>
               </div>
             </a>
           </div>
         </li>
-        <li class="design development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/the-damai.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #E0D9D1;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/the-damai/b511d32d21-1710452224/thumbnail-thedamai-v2.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>The Damai</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2024</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="design development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/fabric.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #48494A;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/fabric/ac07564a5f-1688453092/thumbnail-fabric-darkgray.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>FABRIC™</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2023</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="design development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/aanstekelijk.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #101010;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/aanstekelijk/441187fb44-1687423090/thumbnail-aanstekelijk.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>Aanstekelijk</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2023</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="development interaction design visible">
-          <div class="single-tile-wrap">
-            <a href="work/base-create.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #363637;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/base-create/1f2468ab51-1680179645/thumbnail-base-desktop.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>Base Create</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2023</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="design development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/avvr.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #D8D3CD;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/avvr/4d2a7758a4-1672918357/thumbnail-avvr-v2.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>AVVR</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2023</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="design development visible">
-          <div class="single-tile-wrap">
-            <a href="work/graphichunters.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #7E7E7E;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/graphichunters/0daec771af-1660128857/thumbnail-gh.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>GraphicHunters</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2022</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/future-goals.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #DCD0C2;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/future-goals/614e28a662-1653057688/thumbnail-futuregoals.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>Future Goals</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Interaction & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2022</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/atypikal.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #B1A994;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/atypikal/fd1951ffc9-1646837277/thumbnail-atypikal.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>Atypikal</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Interaction & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2021</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="development interaction visible">
-          <div class="single-tile-wrap">
-            <a href="work/one-nil.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: var(--color-lightgray);"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/one-nil/288460827e-1646837272/thumbnail-onenil-v3.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>One:Nil</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Interaction & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2021</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="design development visible">
-          <div class="single-tile-wrap">
-            <a href="work/andy-hardy.html" class="row">
-              <div class="flex-col">
-                <div class="tile-image">
-                  <div class="overlay overlay-color" style="background-color: #626D6E;"></div>
-                  <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="media/pages/work/andy-hardy/f152b03247-1646837253/thumbnail-andyhardy.jpg"></div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <h4>
-                  <span>Andy Hardy</span>
-                </h4>
-                <div class="stripe"></div>
-              </div>
-              <div class="flex-col">
-                <p>Design & Development</p>
-              </div>
-              <div class="flex-col">
-                <p>2020</p>
-              </div>
-            </a>
-          </div>
-        </li>
+        {% endfor %}
       </ul>
     </div>
   </section>
+{% set archiveCount = (collections.works or []) | length %}
 </section>
 <section class="section center-grid-btn center-grid-btn-archive" data-scroll-section>
   <div class="container">
@@ -642,7 +220,7 @@ permalink: "/work.html"
         <a href="archive.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
           <div class="btn-fill"></div>
           <span class="btn-text">
-            <span class="btn-text-inner change">Archive <div class="count-nr">66</div>
+            <span class="btn-text-inner change">Archive <div class="count-nr">{{ archiveCount }}</div>
             </span>
           </span>
         </a>
