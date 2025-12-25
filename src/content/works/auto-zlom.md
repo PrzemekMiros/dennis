@@ -3,7 +3,7 @@ title: "Auto Złom"
 href: "https://zlomowanie24h.com/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/zlom-mockup.jpg"
+tileImage: "content/works/img/zlom-thumb-big.jpg"
 tileBg: "#101010"
 classes:
   - design

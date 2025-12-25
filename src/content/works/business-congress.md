@@ -3,7 +3,7 @@ title: "Business Woman Congress"
 href: "https://businesswomancongress.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/congres-mockup.jpg"
+tileImage: "content/works/img/moc-congress.jpg"
 tileBg: "#101010"
 classes:
   - design

@@ -1,3 +1,5 @@
+// const filesMinifier = require("@sherby/eleventy-plugin-files-minifier");
+
 module.exports = function (eleventyConfig) {
   // We only render templates we explicitly mark as templates.
   eleventyConfig.setTemplateFormats(["njk", "md"]);
@@ -12,6 +14,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/code.jquery.com": "code.jquery.com" });
   eleventyConfig.addPassthroughCopy({ "src/cdnjs.cloudflare.com": "cdnjs.cloudflare.com" });
   eleventyConfig.addPassthroughCopy({ "src/cdn.jsdelivr.net": "cdn.jsdelivr.net" });
+
+  // eleventyConfig.addPlugin(filesMinifier);
 
   eleventyConfig.addCollection("works", (collectionApi) => {
     return collectionApi
@@ -31,7 +35,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "public",
       includes: "includes",
-      data: "_data",
+      data: "data",
     },
   };
 };
