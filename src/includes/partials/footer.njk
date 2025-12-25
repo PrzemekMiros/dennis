@@ -74,9 +74,9 @@
                   <p>2026 © Wszelkie prawa zastrzeżone</p>
                 </div>
                 <div class="time">
-                  <h5>Local time</h5>
+                  <h5>Czas</h5>
                   <p>
-                    <span id="timeSpan">09:41 PM CET</span>
+                    <span id="timeSpan"></span>
                   </p>
                 </div>
               </div>
@@ -131,6 +131,22 @@
     <script src="assets/js/lazyload.min.js"></script>
     <script src="assets/js/locomotive-scroll.min.js"></script>
     <script defer src="assets/js/index-new.js"></script>
+    <script>
+  (function () {
+    function updateLocalTime() {
+      var el = document.getElementById('timeSpan');
+      if (!el) return;
+      el.textContent = new Intl.DateTimeFormat('pl-PL', {
+        hour: '2-digit',
+        minute: '2-digit',
+      }).format(new Date());
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      updateLocalTime();
+      setInterval(updateLocalTime, 60000);
+    });
+  })();
+</script>
   </body>
 
 </html>

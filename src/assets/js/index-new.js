@@ -1085,7 +1085,6 @@ function initTimeZone() {
       // month: 'numeric',
       // day: 'numeric',
       hour: '2-digit',
-      hour12: 'true',
       minute: 'numeric',
       // second: 'numeric',
    };
