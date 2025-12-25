@@ -1,5 +1,5 @@
 ---
-title: "Agencja Cosmos"
+title: "Auto Złom"
 href: "https://zlomowanie24h.com/"
 role: "Kodowanie i optymalizacja"
 year: 2023

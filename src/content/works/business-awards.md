@@ -3,7 +3,7 @@ title: "Business Woman Awards"
 href: "https://businesswomenawards.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/cosmos-thumb-big.jpg"
+tileImage: "content/works/img/awards-mockup.jpg"
 tileBg: "#101010"
 classes:
   - design
