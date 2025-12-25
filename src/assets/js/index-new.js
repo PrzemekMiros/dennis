@@ -1051,18 +1051,41 @@ function initTricksWords() {
 * Contact Form
 */
 function initContactForm() {
-    
-  $('.field').on('input', function() {
+  var form = document.getElementById('contactFormPortfolio');
+  var sendFormStatus = document.getElementById('send_contact_form_status');
+  if (!form || !sendFormStatus || form.dataset.bound === 'true') return;
+  form.dataset.bound = 'true';
+
+  $('.field').on('input', function () {
     $(this).parent().toggleClass('not-empty', this.value.trim().length > 0);
-  });
+  }).trigger('input');
 
-  $(function () {
-      $('.field').focusout(function () {
-          var text_val = $(this).val();
-          $(this).parent().toggleClass('not-empty', text_val !== "");
-      }).focusout();
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    sendFormStatus.style.display = 'block';
+    sendFormStatus.innerHTML = '';
+    var formData = new FormData(form);
+    var xhr = new XMLHttpRequest();
+    var url = form.getAttribute('action') || 'https://www.futurewebstudio.pl/contactFormPortfolio.php';
+    xhr.open('POST', url, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          try {
+              var res = JSON.parse(xhr.responseText);
+              var msg = res.msg || res.message;
+              if (msg) sendFormStatus.innerHTML = msg;
+              if (res.status === 1) form.reset();
+            } catch (err) {
+              sendFormStatus.innerHTML = '';
+            }
+          } else {
+            sendFormStatus.innerHTML = '';
+          }
+        }
+      };
+    xhr.send(formData);
   });
-
 }
 
 /**
