@@ -3,7 +3,7 @@ title: "Skup Anglików"
 href: "https://skup-anglikow.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/angliki-mockup.jpg"
+tileImage: "content/works/img/angliki-thumb-big.jpg"
 tileBg: "#101010"
 classes:
   - design

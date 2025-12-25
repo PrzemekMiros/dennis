@@ -3,7 +3,7 @@ title: "SMKA"
 href: "https://smka.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/smka-mockup.jpg"
+tileImage: "content/works/img/moc-smka.jpg"
 tileBg: "#101010"
 classes:
   - development
