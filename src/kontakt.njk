@@ -44,32 +44,32 @@ barbaNamespace: "kontakt"
             <form class="form" id="contactFormPortfolio" method="post" action="https://www.futurewebstudio.pl/contactFormPortfolio.php">
               <div class="website-field">
                 <label class="label" for="tel">Numer telefonu</label>
-                <input class="field" type="text" id="form-tel" name="tel" tabindex="-1">
+                <input class="field" type="text" id="form-tel" name="form-phone" tabindex="-1">
               </div>
               <div class="form-col">
                 <h5>01</h5>
                 <label class="label" for="name">Jak masz na imię?</label>
-                <input class="field" type="text" id="form-name" name="name" value="" required placeholder="Jan Kowalski *">
+                <input class="field" type="text" id="form-name" name="form-name" value="" required placeholder="Jan Kowalski *">
               </div>
               <div class="form-col">
                 <h5>02</h5>
                 <label class="label" for="email">Wpisz swój adres email</label>
-                <input class="field" type="email" id="form-email" name="email" value="" required placeholder="jan@kowalski.pl *">
+                <input class="field" type="email" id="form-email" name="form-mail" value="" required placeholder="jan@kowalski.pl *">
               </div>
               <div class="form-col">
                 <h5>03</h5>
                 <label class="label" for="email">Podaj nazwę firmy</label>
-                <input class="field" type="text" id="form-company" name="company" value="" required placeholder="Firma X ®">
+                <input class="field" type="text" id="form-company" name="form-company" value="" required placeholder="Firma X ®">
               </div>
               <div class="form-col">
                 <h5>04</h5>
                 <label class="label" for="email">Jakich usług szukasz?</label>
-                <input class="field" type="text" id="form-service" name="service" value="" required placeholder="Stworzenie strony www ...">
+                <input class="field" type="text" id="form-service" name="form-service" value="" required placeholder="Stworzenie strony www ...">
               </div>
               <div class="form-col">
                 <h5>05</h5>
                 <label class="label" for="message">Twoja wiadomość</label>
-                <textarea class="field" type="text" id="form-message" name="message" rows="8" required placeholder="Cześć Przemek, możesz mi pomóc w... *"></textarea>
+                <textarea class="field" type="text" id="form-message" name="form-message" rows="8" required placeholder="Cześć Przemek, możesz mi pomóc w... *"></textarea>
               </div>
               <div class="btn-contact-send">
                 <div class="btn btn-round" data-scroll data-scroll-speed="2" data-scroll-offset="-50%, 0%">
@@ -233,7 +233,8 @@ barbaNamespace: "kontakt"
                 if (xhr.status === 200) {
                   try {
                     var res = JSON.parse(xhr.responseText);
-                    if (res.msg) sendFormStatus.innerHTML = res.msg;
+                    var msg = res.msg || res.message;
+                    if (msg) sendFormStatus.innerHTML = msg;
                     if (res.status === 1) form.reset();
                   } catch (err) {
                     sendFormStatus.innerHTML = 'Blad podczas przetwarzania odpowiedzi.';
