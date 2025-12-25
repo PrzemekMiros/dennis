@@ -1,12 +1,12 @@
 ---
 title: "EGP System"
-href: "/work/angliki.html"
+href: "https://egp-system.com/"
 role: "Sklep i integracje"
 year: 2021
 tileImage: "/content/works/img/egp-thumb-big.jpg"
 tileBg: "#FFFFFF"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 6

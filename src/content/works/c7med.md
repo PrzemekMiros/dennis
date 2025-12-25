@@ -1,6 +1,6 @@
 ---
 title: "C7Med Rehabilitacja"
-href: "https://agencjacosmos.pl/"
+href: "https://www.c7med.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2021
 tileImage: "content/works/img/c7med-mockup.jpg"

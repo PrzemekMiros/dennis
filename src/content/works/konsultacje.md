@@ -1,12 +1,12 @@
 ---
 title: "Konsultacje Społeczne"
-href: "https://agencjacosmos.pl/"
+href: "https://twojekonsultacje.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2021
 tileImage: "content/works/img/konsultacje-thumb-big.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 22

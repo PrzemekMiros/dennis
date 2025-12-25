@@ -1,6 +1,6 @@
 ---
 title: "Silver Plus"
-href: "https://agencjacosmos.pl/"
+href: "https://www.silverplus2100.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/silver-mockup.jpg"

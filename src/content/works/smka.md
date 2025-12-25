@@ -1,6 +1,6 @@
 ---
 title: "SMKA"
-href: "https://agencjacosmos.pl/"
+href: "https://smka.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
 tileImage: "content/works/img/smka-mockup.jpg"

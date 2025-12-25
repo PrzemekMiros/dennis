@@ -1,12 +1,12 @@
 ---
 title: "Sanit Instalacje"
-href: "https://agencjacosmos.pl/"
+href: "https://sanit-instalacje.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
 tileImage: "content/works/img/sanit-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 42

@@ -1,12 +1,12 @@
 ---
 title: "LDF Ubezpieczenia"
-href: "https://agencjacosmos.pl/"
+href: "https://ubezpieczenia-stoczek.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2024
 tileImage: "content/works/img/ldf-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 33

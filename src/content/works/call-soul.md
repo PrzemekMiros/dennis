@@ -1,6 +1,6 @@
 ---
 title: "Call Your Soul"
-href: "/work/angliki.html"
+href: "https://callyoursoul.pl/"
 role: "Projekt i kodowanie"
 year: 2022
 tileImage: "/content/works/img/soul-mockup.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Skup Anglików"
-href: "https://agencjacosmos.pl/"
+href: "https://skup-anglikow.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/angliki-mockup.jpg"

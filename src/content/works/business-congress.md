@@ -1,12 +1,12 @@
 ---
 title: "Business Woman Congress"
-href: "https://agencjacosmos.pl/"
+href: "https://businesswomancongress.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
 tileImage: "content/works/img/cosmos-thumb-big.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 10

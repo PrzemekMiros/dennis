@@ -1,6 +1,6 @@
 ---
 title: "CSE Dental"
-href: "/work/angliki.html"
+href: "https://cse-dentalprogress.pl/"
 role: "Kodowanie i pozycjonowanie"
 year: 2024
 tileImage: "/content/works/img/cse-thumb-big.jpg"

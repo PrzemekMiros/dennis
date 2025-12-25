@@ -1,12 +1,12 @@
 ---
 title: "Namioty Imprezowe"
-href: "https://agencjacosmos.pl/"
+href: "https://imprezowe-namioty.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/namioty-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 24

@@ -64,9 +64,15 @@
           <div class="rounded-div"></div>
         </div>
       </div>
-    </div>
+    </div> 
     <main class="main" id="{{ mainId }}" data-barba="container" data-barba-namespace="{{ barbaNamespace }}">
-      {% set works = works or collections.works %}
+      {% if works %}
+        {% set works = works %}
+      {% elseif currentPage == 'realizacje' or barbaNamespace == 'realizacje' %}
+        {% set works = collections.worksAll %}
+      {% else %}
+        {% set works = collections.works %}
+      {% endif %}
       <div class="mouse-pos-list-image no-select">
         <div class="mouse-pos-list-image-bounce overlay">
           <div class="float-image-wrap">

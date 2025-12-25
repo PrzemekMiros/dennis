@@ -1,6 +1,6 @@
 ---
 title: "Kajaki24 "
-href: "/work/angliki.html"
+href: "https://kajaki24.com.pl/"
 role: "Projekt i kodowanie"
 year: 2023
 tileImage: "/content/works/img/kajaki-thumb-big.jpg"

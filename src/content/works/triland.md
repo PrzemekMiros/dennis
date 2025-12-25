@@ -1,12 +1,12 @@
 ---
 title: "Triland Sp. z o. o."
-href: "https://agencjacosmos.pl/"
+href: "https://triland.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2024
 tileImage: "content/works/img/triland.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 32

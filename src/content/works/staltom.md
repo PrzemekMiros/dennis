@@ -1,6 +1,6 @@
 ---
 title: "Staltom"
-href: "/work/angliki.html"
+href: "https://www.staltom.com.pl/"
 role: "Design & Development"
 year: 2022
 tileImage: "/content/works/img/staltom-thumb-big.jpg"

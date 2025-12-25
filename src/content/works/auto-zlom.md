@@ -1,12 +1,12 @@
 ---
 title: "Agencja Cosmos"
-href: "https://agencjacosmos.pl/"
+href: "https://zlomowanie24h.com/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/zlom-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 45

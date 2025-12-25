@@ -7,6 +7,7 @@ tileImage: "content/works/img/business-thumb-big.jpg"
 tileBg: "#F1F1F1"
 classes:
   - design
+  - development
   - interaction
   - visible
 order: 1

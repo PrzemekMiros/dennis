@@ -1,12 +1,12 @@
 ---
 title: "PZOZ Grabów"
-href: "https://agencjacosmos.pl/"
+href: "https://przychodniagrabow.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/przychodnia-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 25

@@ -1,6 +1,6 @@
 ---
 title: "Clientify"
-href: "https://agencjacosmos.pl/"
+href: "http://clientify.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/clientify-mockup.jpg"

@@ -1,12 +1,12 @@
 ---
 title: "Ebanco"
-href: "https://agencjacosmos.pl/"
+href: "https://ebanco.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
 tileImage: "content/works/img/ebanco-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 2

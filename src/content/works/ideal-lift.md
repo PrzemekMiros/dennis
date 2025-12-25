@@ -1,6 +1,6 @@
 ---
 title: "Ideal Lift"
-href: "/work/angliki.html"
+href: "https://ideal-lift.pl/"
 role: "Projekt i kodowanie"
 year: 2024
 tileImage: "/content/works/img/idealift-thumb-big.jpg"

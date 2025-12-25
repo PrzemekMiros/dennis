@@ -6,7 +6,7 @@ year: 2023
 tileImage: "content/works/img/cosmos-thumb-big.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 9

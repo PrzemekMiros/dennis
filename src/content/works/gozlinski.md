@@ -1,12 +1,12 @@
 ---
 title: "Goźliński Holding"
-href: "https://agencjacosmos.pl/"
+href: "https://gozlinskiholding.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
 tileImage: "content/works/img/gozlinski-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 16

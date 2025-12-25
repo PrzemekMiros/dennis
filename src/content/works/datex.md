@@ -1,12 +1,12 @@
 ---
 title: "Datecs Pay"
-href: "https://agencjacosmos.pl/"
+href: "https://datecspay.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2024
 tileImage: "content/works/img/datecs-mockup.jpg"
 tileBg: "#101010"
 classes:
-  - development
+  - design
   - interaction
   - visible
 order: 7

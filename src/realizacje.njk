@@ -24,8 +24,16 @@ barbaNamespace: "realizacje"
 </header>
 {% set worksList = worksList or collections.worksAll or [] %}
 {% set countAll = worksList | length %}
-{% set countWww = worksList | selectattr("data.category","equalto","Strony www") | list | length %}
-{% set countEcom = worksList | selectattr("data.category","equalto","Ecommerce") | list | length %}
+{% set countWww = 0 %}
+{% set countEcom = 0 %}
+{% for work in worksList %}
+  {% if work.data.classes and ('design' in work.data.classes) %}
+    {% set countWww = countWww + 1 %}
+  {% endif %}
+  {% if work.data.classes and ('development' in work.data.classes) %}
+    {% set countEcom = countEcom + 1 %}
+  {% endif %}
+{% endfor %}
 
 <section class="section work-filters" data-scroll-section>
   <div class="container once-in">
@@ -113,7 +121,7 @@ barbaNamespace: "realizacje"
         {% for work in worksList %}
         <li class="{{ (work.data.classes or []) | join(' ') }}">
           <div class="stripe animate"></div>
-          <a href="{{ work.data.href }}" class="row">
+          <a href="{{ work.data.href }}" class="row" target="_blank">
             <div class="flex-col">
               <h4>
                 <span>{{ work.data.tileTitle or work.data.title }}</span>
@@ -137,12 +145,12 @@ barbaNamespace: "realizacje"
   </section>
   <section class="section work-tiles grid-fade grid-columns-part">
     <div class="container">
-      {% set worksList = worksList or collections.worksAll or [] %}
+      {% set worksList = collections.worksAll or [] %}
       <ul>
         {% for work in worksList %}
         <li class="{{ (work.data.classes or []) | join(' ') }}">
           <div class="single-tile-wrap">
-            <a href="{{ work.data.href }}" class="row">
+            <a href="{{ work.data.href }}" class="row" target="_blank">
               <div class="flex-col">
                 <div class="tile-image">
                   <div class="overlay overlay-color" style="background-color: {{ work.data.tileBg or '#F1F1F1' }};"></div>

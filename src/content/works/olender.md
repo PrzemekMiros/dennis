@@ -1,6 +1,6 @@
 ---
 title: "Olender Solutions"
-href: "https://agencjacosmos.pl/"
+href: "https://olendersolutions.com/"
 role: "Kodowanie i optymalizacja"
 year: 2025
 tileImage: "content/works/img/olender-mockup.jpg"

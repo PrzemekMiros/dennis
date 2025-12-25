@@ -1,6 +1,6 @@
 ---
 title: "Hotel Moment"
-href: "/work/angliki.html"
+href: "https://momentstrzelce.pl/"
 role: "Projekt i kodowanie"
 year: 2024
 tileImage: "/content/works/img/moment-thumb-big.jpg"
