@@ -3,7 +3,7 @@ title: "Agencja Cosmos"
 href: "https://agencjacosmos.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/cosmos-thumb-big.jpg"
+tileImage: "/content/works/img/cosmos-thumb-big.jpg"
 tileBg: "#101010"
 classes:
   - design

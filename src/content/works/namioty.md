@@ -3,7 +3,7 @@ title: "Namioty Imprezowe"
 href: "https://imprezowe-namioty.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/namioty-thumb-big.jpg"
+tileImage: "/content/works/img/namioty-thumb-big.jpg"
 tileBg: "#101010"
 classes:
   - design

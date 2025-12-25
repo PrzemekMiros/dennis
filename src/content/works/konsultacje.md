@@ -3,7 +3,7 @@ title: "Konsultacje Społeczne"
 href: "https://twojekonsultacje.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2021
-tileImage: "content/works/img/konsultacje-thumb-big.jpg"
+tileImage: "/content/works/img/konsultacje-thumb-big.jpg"
 tileBg: "#101010"
 classes:
   - design

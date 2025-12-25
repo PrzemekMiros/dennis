@@ -3,7 +3,7 @@ title: "PZOZ Grabów"
 href: "https://przychodniagrabow.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/przychodnia-thumb-big.jpg"
+tileImage: "/content/works/img/przychodnia-thumb-big.jpg"
 tileBg: "#101010"
 classes:
   - design

@@ -3,7 +3,7 @@ title: "Clientify"
 href: "http://clientify.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/clientify-mockup.jpg"
+tileImage: "/content/works/img/clientify-mockup.jpg"
 tileBg: "#101010"
 classes:
   - design

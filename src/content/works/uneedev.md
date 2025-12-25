@@ -3,7 +3,7 @@ title: "Uneedev"
 href: "https://agencjacosmos.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/moc-uneedev.jpg"
+tileImage: "/content/works/img/moc-uneedev.jpg"
 tileBg: "#101010"
 classes:
   - design

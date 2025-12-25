@@ -3,7 +3,7 @@ title: "CUS Grabów"
 href: "https://cusgrabow.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/moc-cus.jpg"
+tileImage: "/content/works/img/moc-cus.jpg"
 tileBg: "#101010"
 classes:
   - design

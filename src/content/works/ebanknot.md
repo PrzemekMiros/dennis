@@ -3,7 +3,7 @@ title: "Ebanknot"
 href: "https://ebanknot.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/ebanknot-mockup.jpg"
+tileImage: "/content/works/img/ebanknot-mockup.jpg"
 tileBg: "#101010"
 classes:
   - design

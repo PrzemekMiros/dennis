@@ -3,7 +3,7 @@ title: "Olender Solutions"
 href: "https://olendersolutions.com/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/olender-mockup.jpg"
+tileImage: "/content/works/img/olender-mockup.jpg"
 tileBg: "#101010"
 classes:
   - design
