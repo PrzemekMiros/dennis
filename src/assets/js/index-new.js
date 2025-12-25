@@ -1376,7 +1376,7 @@ function initScrolltriggerAnimations() {
           backgroundColor: "#FFFFFF",
         })
         tl.to(targetElement, {
-          backgroundColor: "#E9EAEB",
+          backgroundColor: "#f1f3f5ff",
           ease: "none",
         });
       });

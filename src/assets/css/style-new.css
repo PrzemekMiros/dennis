@@ -474,17 +474,17 @@ main.touch .main-wrap {
 }
 
 .footer-rounded-div {
-   width: 100%;
-   position: relative;
-   height: 0;
-   display: block;
-   z-index: 2;
-}
-
+    width: 100%;
+    position: relative;
+    height: 0;
+    display: block;
+    z-index: 2;
+ }
+ 
 .footer-rounded-div .rounded-div-wrap {
-   transform: translateY(-1px);
-   will-change: height;
-}
+    transform: translateY(-1px);
+    will-change: height;
+ }
 
 .footer {
    padding-bottom: 0;
@@ -1737,7 +1737,7 @@ main.touch .main-wrap {
    height: 0;
    border-radius: 50%;
    border: 0;
-   background: var(--color-blue);
+   background: var(--color-green);
    position: fixed;
    z-index: 26;
    pointer-events: none;
@@ -1843,7 +1843,7 @@ main.touch .main-wrap {
    height: 3em;
    border-radius: 50%;
    border: 0;
-   background: var(--color-blue);
+   background: var(--color-green);
    position: fixed;
    pointer-events: none;
    transform: scale(0);
@@ -1891,9 +1891,9 @@ main.touch .main-wrap {
 }
 
 @keyframes digitalball {
-   0%   {background: var(--color-blue);}
+   0%   {background: var(--color-green);}
    50%   {background: #ff4444;}
-   100% {background: var(--color-blue);}
+   100% {background: var(--color-green);}
 }
 
 .digital-ball {
@@ -1906,7 +1906,7 @@ main.touch .main-wrap {
    transform: translate(-50%, -50%);
    position: absolute;
    overflow: hidden;
-   background: var(--color-blue);
+   background: var(--color-green);
 }
 
 .digital-ball .overlay {
@@ -2340,7 +2340,7 @@ main.touch .main-wrap {
    width: 105%;
    left: -5%; */
 
-   background: url("../img/DSC07079.jpg") center center no-repeat;
+   background: url("../img/me.jpg") center center no-repeat;
    background-size: cover;
    top: -3%;
    height: 106%;
@@ -2418,7 +2418,7 @@ main.touch .main-wrap {
    }
    
    .about-awwwards .single-image  .overlay:nth-child(1) {
-      background: url("../img/DSC07079.jpg") center center no-repeat;
+      background: url("../img/me.jpg") center center no-repeat;
       background-size: cover;
       top: -8%;
       height: 110%;
@@ -3613,4 +3613,3 @@ main.touch .case-intro-image .btn-wrap {
 .block-button .row .flex-col:last-child {
    margin-right: 0;
 }
-
