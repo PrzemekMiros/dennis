@@ -10,7 +10,7 @@ classes:
   - design
   - interaction
   - visible
-order: 2
+order: 3
 home: true
 ---
 Serwis dla EcoTech Group z naciskiem na nowoczesny design i solidny development.

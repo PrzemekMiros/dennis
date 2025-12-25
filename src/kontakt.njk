@@ -1,4 +1,4 @@
---- 
+﻿--- 
 title: "Kontakt" 
 loadingLabel: "Kontakt"
 permalink: "/kontakt.html"
@@ -41,7 +41,7 @@ barbaNamespace: "kontakt"
         </div>
         <div class="row once-in">
           <div class="flex-col">
-            <form class="form" method="post" action="https://dennissnellenberg.com/contact" enctype="multipart/form-data" novalidate>
+            <form class="form" id="contactFormPortfolio" method="post" action="https://www.futurewebstudio.pl/contactFormPortfolio.php">
               <div class="website-field">
                 <label class="label" for="tel">Numer telefonu</label>
                 <input class="field" type="text" id="form-tel" name="tel" tabindex="-1">
@@ -81,6 +81,7 @@ barbaNamespace: "kontakt"
                   </div>
                 </div>
               </div>
+              <div id="send_contact_form_status" class="form-status" style="display:none;"></div>
             </form>
           </div>
           <div class="flex-col">
@@ -113,7 +114,7 @@ barbaNamespace: "kontakt"
             <h5>Media</h5>
             <ul class="links-wrap">
               <li class="btn btn-link btn-link-external">
-                <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                <a href="https://www.facebook.com/przemekstronyinternetowe" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                   <span class="btn-text">
                     <span class="btn-text-inner">Facebook</span>
                   </span>
@@ -151,7 +152,7 @@ barbaNamespace: "kontakt"
             <div class="flex-col">
               <div class="credits">
                 <h5>Przemek Miros</h5>
-                <p>2022 © Wszelkie prawa zastrzeżone</p>
+                <p>2026 © Wszelkie prawa zastrzeżone</p>
               </div>
               <div class="time">
                 <h5>Local time</h5>
@@ -161,32 +162,32 @@ barbaNamespace: "kontakt"
               </div>
             </div>
             <div class="flex-col">
-              <div class="socials">
+              <div class="socials"> 
                 <h5>Media</h5>
                 <ul>
                   <li class="btn btn-link btn-link-external">
-                    <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <a href="https://www.facebook.com/przemekstronyinternetowe" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
                         <span class="btn-text-inner">Facebook</span>
                       </span>
                     </a>
                   </li>
                   <li class="btn btn-link btn-link-external">
-                    <a href="https://www.instagram.com/codebydennis/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <a href="https://www.behance.net/przemyslaw#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
                         <span class="btn-text-inner">Behance</span>
                       </span>
                     </a>
                   </li>
                   <li class="btn btn-link btn-link-external">
-                    <a href="https://twitter.com/codebydennis" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <a href="https://github.com/PrzemekMiros" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
                         <span class="btn-text-inner">Github</span>
                       </span>
                     </a>
                   </li>
                   <li class="btn btn-link btn-link-external">
-                    <a href="https://www.linkedin.com/in/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                    <a href="https://codepen.io/przemek-miros/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                       <span class="btn-text">
                         <span class="btn-text-inner">Codepen</span>
                       </span>
@@ -211,7 +212,53 @@ barbaNamespace: "kontakt"
     <script src="cdn.jsdelivr.net/npm/vanilla-lazyload%4017.6.1/dist/lazyload.min.js"></script>
     <script src="assets/js/locomotive-scroll.min.js"></script>
     <script defer src="assets/js/index-new.js"></script>
+        <script>
+      (function () {
+        function initContactForm() {
+          var form = document.getElementById('contactFormPortfolio');
+          var sendFormStatus = document.getElementById('send_contact_form_status');
+          if (!form || !sendFormStatus || form.dataset.bound === 'true') return;
+          form.dataset.bound = 'true';
+
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            sendFormStatus.style.display = 'block';
+            sendFormStatus.innerHTML = 'Wyslano formularz kontaktowy';
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            var url = form.getAttribute('action') || '/forms/contactForm.php';
+            xhr.open('POST', url, true);
+            xhr.onreadystatechange = function () {
+              if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                  try {
+                    var res = JSON.parse(xhr.responseText);
+                    if (res.msg) sendFormStatus.innerHTML = res.msg;
+                    if (res.status === 1) form.reset();
+                  } catch (err) {
+                    sendFormStatus.innerHTML = 'Blad podczas przetwarzania odpowiedzi.';
+                  }
+                } else {
+                  sendFormStatus.innerHTML = 'Wystapil blad podczas wysylania formularza.';
+                }
+              }
+            };
+            xhr.send(formData);
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', initContactForm);
+        if (window.barba && window.barba.hooks && window.barba.hooks.after) {
+          window.barba.hooks.after(initContactForm);
+        }
+      })();
+    </script>
+
+
   </body>
 
 </html>
+
+
+
 

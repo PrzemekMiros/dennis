@@ -2,7 +2,7 @@
 title: "CSE Dental"
 href: "/work/angliki.html"
 role: "Kodowanie i pozycjonowanie"
-year: 2025
+year: 2024
 tileImage: "/content/works/img/cse-thumb-big.jpg"
 tileBg: "#FFFFFF"
 classes:

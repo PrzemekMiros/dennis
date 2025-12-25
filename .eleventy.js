@@ -20,6 +20,12 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
+  eleventyConfig.addCollection("worksAll", (collectionApi) => {
+    return collectionApi
+      .getFilteredByGlob("src/content/works/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  });
+
   return {
     dir: {
       input: "src",

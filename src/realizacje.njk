@@ -10,7 +10,7 @@ barbaNamespace: "realizacje"
 
 <div class="main-wrap" data-scroll-container>
   <header class="section default-header work-header" data-scroll-section>
-    {% include "partials/page-nav.njk" %}
+{% include "partials/page-nav.njk" %}
 <div class="container medium">
   <div class="row">
     <div class="flex-col once-in">
@@ -22,7 +22,7 @@ barbaNamespace: "realizacje"
   </div>
 </div>
 </header>
-{% set worksList = worksList or collections.works or [] %}
+{% set worksList = worksList or collections.worksAll or [] %}
 {% set countAll = worksList | length %}
 {% set countWww = worksList | selectattr("data.category","equalto","Strony www") | list | length %}
 {% set countEcom = worksList | selectattr("data.category","equalto","Ecommerce") | list | length %}
@@ -108,7 +108,7 @@ barbaNamespace: "realizacje"
           <h5>Rok</h5>
         </div>
       </div>
-      {% set worksList = collections.works or [] %}
+      {% set worksList = collections.worksAll or [] %}
       <ul class="work-items mouse-pos-list-image-wrap all-active">
         {% for work in worksList %}
         <li class="{{ (work.data.classes or []) | join(' ') }}">
@@ -137,7 +137,7 @@ barbaNamespace: "realizacje"
   </section>
   <section class="section work-tiles grid-fade grid-columns-part">
     <div class="container">
-      {% set worksList = worksList or collections.works or [] %}
+      {% set worksList = worksList or collections.worksAll or [] %}
       <ul>
         {% for work in worksList %}
         <li class="{{ (work.data.classes or []) | join(' ') }}">
@@ -172,4 +172,3 @@ barbaNamespace: "realizacje"
 
 
 {% include "partials/footer.njk" %} 
-

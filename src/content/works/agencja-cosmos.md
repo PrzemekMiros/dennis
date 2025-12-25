@@ -9,7 +9,7 @@ classes:
   - development
   - interaction
   - visible
-order: 4
+order: 9
 home: true
 ---
 Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

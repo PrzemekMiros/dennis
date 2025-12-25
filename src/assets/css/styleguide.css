@@ -1034,6 +1034,11 @@ main .btn-hamburger.active {
    left: -9999px;
 }
 
+#send_contact_form_status {
+    padding: 2em 0em 1em;
+    color: #fff;
+}
+
 .form input, .form textarea, .form select {
    border:0;
    -webkit-box-shadow: none;
@@ -1157,6 +1162,11 @@ main .btn-hamburger.active {
    opacity: .33;
 }
 
+@media(min-width:767px) {
+    #send_contact_form_status {
+    padding: 3em 3em;
+}
+}
 
 /* --- Arlert Options --- */
 
