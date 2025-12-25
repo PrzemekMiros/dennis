@@ -214,39 +214,34 @@ barbaNamespace: "kontakt"
     <script defer src="assets/js/index-new.js"></script>
         <script>
       (function () {
-        function initContactForm() {
-          var form = document.getElementById('contactFormPortfolio');
-          var sendFormStatus = document.getElementById('send_contact_form_status');
-          if (!form || !sendFormStatus || form.dataset.bound === 'true') return;
-          form.dataset.bound = 'true';
-
-          form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            sendFormStatus.style.display = 'block';
-            sendFormStatus.innerHTML = 'Wyslano formularz kontaktowy';
-            var formData = new FormData(form);
-            var xhr = new XMLHttpRequest();
-            var url = form.getAttribute('action') || '/forms/contactForm.php';
-            xhr.open('POST', url, true);
-            xhr.onreadystatechange = function () {
-              if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                  try {
+        function handleSubmit(formId, successMessageId, successMessage) {
+          var form = document.getElementById(formId);
+          var sendFormStatus = document.getElementById(successMessageId);
+          if (form && sendFormStatus) {
+            form.addEventListener('submit', function(e) {
+              e.preventDefault();
+              sendFormStatus.innerHTML = successMessage; // Ustawia komunikat
+              sendFormStatus.style.display = 'block'; // Pokazuje element
+              var formData = new FormData(form);
+              var xhr = new XMLHttpRequest();
+              xhr.open('POST', 'https://www.futurewebstudio.pl/' + formId + '.php');
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                  if (xhr.status === 200) {
                     var res = JSON.parse(xhr.responseText);
-                    var msg = res.msg || res.message;
-                    if (msg) sendFormStatus.innerHTML = msg;
-                    if (res.status === 1) form.reset();
-                  } catch (err) {
-                    sendFormStatus.innerHTML = 'Blad podczas przetwarzania odpowiedzi.';
+                    if (res.status === 1) {
+                      form.reset();
+                    }
+                  } else {
+                    sendFormStatus.innerHTML = 'Wystąpił błąd podczas wysyłania formularza.';
                   }
-                } else {
-                  sendFormStatus.innerHTML = 'Wystapil blad podczas wysylania formularza.';
                 }
-              }
-            };
-            xhr.send(formData);
-          });
+              };
+              xhr.send(formData);
+            });
+          }
         }
+        handleSubmit('contactFormPortfolio', 'send_contact_form_status', 'Wysłano formularz kontaktowy');
 
         document.addEventListener('DOMContentLoaded', initContactForm);
         if (window.barba && window.barba.hooks && window.barba.hooks.after) {
