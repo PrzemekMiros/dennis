@@ -3,7 +3,7 @@ title: "Goźliński Holding"
 href: "https://gozlinskiholding.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2025
-tileImage: "content/works/img/gozlinski-mockup.jpg"
+tileImage: "content/works/img/moc-holding.jpg"
 tileBg: "#101010"
 classes:
   - design

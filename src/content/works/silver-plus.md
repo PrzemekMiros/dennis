@@ -3,7 +3,7 @@ title: "Silver Plus"
 href: "https://www.silverplus2100.pl/"
 role: "Kodowanie i optymalizacja"
 year: 2023
-tileImage: "content/works/img/silver-mockup.jpg"
+tileImage: "content/works/img/moc-silver.jpg"
 tileBg: "#101010"
 classes:
   - design

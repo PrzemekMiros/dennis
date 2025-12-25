@@ -4,16 +4,8 @@ module.exports = function (eleventyConfig) {
   // We only render templates we explicitly mark as templates.
   eleventyConfig.setTemplateFormats(["njk", "md"]);
 
-  // Static assets copied as-is
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "src/media": "media" });
-
   eleventyConfig.addPassthroughCopy({ "src/content/works/img" : "content/works/img" });
-
-  // Local copies of CDN files from the original ZIP mirror
-  eleventyConfig.addPassthroughCopy({ "src/code.jquery.com": "code.jquery.com" });
-  eleventyConfig.addPassthroughCopy({ "src/cdnjs.cloudflare.com": "cdnjs.cloudflare.com" });
-  eleventyConfig.addPassthroughCopy({ "src/cdn.jsdelivr.net": "cdn.jsdelivr.net" });
 
   // eleventyConfig.addPlugin(filesMinifier);
 
