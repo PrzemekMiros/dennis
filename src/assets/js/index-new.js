@@ -1,8 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let scroll;
-let scrollTriggerRefreshHandler;
-let scrollResizeHandler;
 
 const body = document.body;
 const select = (e) => document.querySelector(e);
@@ -420,18 +418,7 @@ function initPageTransitions() {
       },
       async beforeEnter(data) {
         ScrollTrigger.getAll().forEach(t => t.kill());
-        ScrollTrigger.clearMatchMedia();
-        if (scrollTriggerRefreshHandler) {
-          ScrollTrigger.removeEventListener('refresh', scrollTriggerRefreshHandler);
-          scrollTriggerRefreshHandler = null;
-        }
-        if (scrollResizeHandler) {
-          window.removeEventListener('resize', scrollResizeHandler);
-          scrollResizeHandler = null;
-        }
-        if (scroll && scroll.destroy) {
-          scroll.destroy();
-        }
+        scroll.destroy();
         initSmoothScroll(data.next.container);
         initScript(); 
       },
@@ -460,8 +447,7 @@ function initPageTransitions() {
       smooth: true,
     });
 
-    scrollResizeHandler = () => scroll && scroll.update();
-    window.addEventListener('resize', scrollResizeHandler);
+    window.onresize = scroll.update();
 
     scroll.on("scroll", () => ScrollTrigger.update());
 
@@ -491,8 +477,7 @@ function initPageTransitions() {
     }
 
     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-    scrollTriggerRefreshHandler = () => scroll && scroll.update();
-    ScrollTrigger.addEventListener('refresh', scrollTriggerRefreshHandler);
+    ScrollTrigger.addEventListener('refresh', () => scroll.update());
 
     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
     ScrollTrigger.refresh();
@@ -1316,7 +1301,7 @@ function initScrolltriggerAnimations() {
             trigger: triggerElement,
             start: "0% 100%",
             end: "100% 100%",
-            scrub: 0
+            scrub: true
           }
         });
         tl.to(targetElementRound, {
@@ -1435,7 +1420,7 @@ function initScrolltriggerAnimations() {
             trigger: triggerElement,
             start: "0% 100%",
             end: "100% 100%",
-            scrub: 0
+            scrub: true
           }
         });
         tl.to(targetElementRound, {

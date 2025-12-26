@@ -484,6 +484,7 @@ main.touch .main-wrap {
 .footer-rounded-div .rounded-div-wrap {
     transform: translateY(-1px);
     will-change: height;
+    transition: 0.2s;
  }
 
 .footer {
