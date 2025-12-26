@@ -1,5 +1,10 @@
 /* ------------------------- Style ® Code by Dennis -------------------------------------------------- */
 
+.logo-img {
+   margin-bottom: 3px;
+   width: 25px
+}
+
 main {
    box-sizing: border-box;
    overflow: hidden;
