@@ -2,10 +2,12 @@
 
 module.exports = function (eleventyConfig) {
   // We only render templates we explicitly mark as templates.
-  eleventyConfig.setTemplateFormats(["njk", "md"]);
+  eleventyConfig.setTemplateFormats(["njk", "md", "html"]);
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/content/works/img" : "content/works/img" });
+  eleventyConfig.addWatchTarget("src/assets/css");
+  eleventyConfig.addWatchTarget("src/**/*.html");
 
   // eleventyConfig.addPlugin(filesMinifier);
 

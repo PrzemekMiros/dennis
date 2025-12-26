@@ -628,7 +628,7 @@ main.touch .main-wrap {
    }
 
    .footer .container.medium .row:nth-child(1) {
-      padding-bottom: calc(var(--section-padding) * .75);
+      padding-bottom: calc(var(--section-padding) * .95);
    }
 
    .footer .container.medium .row:nth-child(2) {
@@ -905,11 +905,11 @@ main.touch .main-wrap {
    }
 
    .media-video{
-  width: 60%;
-  height: 60%;
-  transform: translate(40%, 40%);
-  object-fit: cover;
-  display: block;
+    width: 90%;
+    height: 38%;
+    transform: translate(5%, 40%);
+    object-fit: cover;
+    display: block;
 }
 
    .home-header .personal-image {
@@ -1013,7 +1013,7 @@ main.touch .main-wrap {
    }
 
    .home-intro .flex-col:nth-child(2) p {
-      margin-bottom: calc(var(--section-padding) * .66);
+      margin-bottom: calc(var(--section-padding) * .9);
       padding-top: 0;
    }
 

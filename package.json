@@ -1,6 +1,5 @@
 {
-  "name": "ezyzip-eleventy",
-  "private": true,
+  "name": "przemek-portfolio",
   "version": "1.0.0",
   "type": "commonjs",
   "scripts": {

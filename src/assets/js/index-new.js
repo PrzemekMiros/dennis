@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let scroll;
+let scrollTriggerRefreshHandler;
+let scrollResizeHandler;
 
 const body = document.body;
 const select = (e) => document.querySelector(e);
@@ -418,7 +420,18 @@ function initPageTransitions() {
       },
       async beforeEnter(data) {
         ScrollTrigger.getAll().forEach(t => t.kill());
-        scroll.destroy();
+        ScrollTrigger.clearMatchMedia();
+        if (scrollTriggerRefreshHandler) {
+          ScrollTrigger.removeEventListener('refresh', scrollTriggerRefreshHandler);
+          scrollTriggerRefreshHandler = null;
+        }
+        if (scrollResizeHandler) {
+          window.removeEventListener('resize', scrollResizeHandler);
+          scrollResizeHandler = null;
+        }
+        if (scroll && scroll.destroy) {
+          scroll.destroy();
+        }
         initSmoothScroll(data.next.container);
         initScript(); 
       },
@@ -447,7 +460,8 @@ function initPageTransitions() {
       smooth: true,
     });
 
-    window.onresize = scroll.update();
+    scrollResizeHandler = () => scroll && scroll.update();
+    window.addEventListener('resize', scrollResizeHandler);
 
     scroll.on("scroll", () => ScrollTrigger.update());
 
@@ -477,7 +491,8 @@ function initPageTransitions() {
     }
 
     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-    ScrollTrigger.addEventListener('refresh', () => scroll.update());
+    scrollTriggerRefreshHandler = () => scroll && scroll.update();
+    ScrollTrigger.addEventListener('refresh', scrollTriggerRefreshHandler);
 
     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
     ScrollTrigger.refresh();

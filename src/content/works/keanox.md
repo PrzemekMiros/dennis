@@ -2,7 +2,7 @@
 title: "Keanox Meble"
 href: "https://keanox.pl/"
 role: "Kodowanie i optymalizacja"
-year: 2025
+year: 2024
 tileImage: "/content/works/img/moc-keanox.jpg"
 tileBg: "#101010"
 classes:
