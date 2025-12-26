@@ -65,22 +65,25 @@
     <main class="main" id="{{ mainId }}" data-barba="container" data-barba-namespace="{{ barbaNamespace }}">
       {% if works %}
         {% set works = works %}
-      {% elseif currentPage == 'realizacje' or barbaNamespace == 'realizacje' %}
+{% elseif currentPage == 'realizacje' or barbaNamespace == 'realizacje' %}
         {% set works = collections.worksAll %}
       {% else %}
         {% set works = collections.works %}
       {% endif %}
+      {% set limitWorks = currentPage != 'realizacje' and barbaNamespace != 'realizacje' %}
       <div class="mouse-pos-list-image no-select">
         <div class="mouse-pos-list-image-bounce overlay">
           <div class="float-image-wrap">
             {% for work in works %}
-            <li class="mouse-pos-list-image-inner {{ (work.data.classes or []) | join(' ') }}">
-              <div
-                class="overlay overlay-image lazy"
-                style="background-color: {{ work.data.tileBg or '#fff' }}; background-position: center center; background-repeat: no-repeat; background-size: cover;"
-                data-bg="{{ work.data.hoverImage or work.data.tileImage }}"
-              ></div>
-            </li>
+              {% if not limitWorks or loop.index0 < 5 %}
+                <li class="mouse-pos-list-image-inner {{ (work.data.classes or []) | join(' ') }}">
+                  <div
+                    class="overlay overlay-image lazy"
+                    style="background-color: {{ work.data.tileBg or '#fff' }}; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-bg="{{ work.data.hoverImage or work.data.tileImage }}"
+                  ></div>
+                </li>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
