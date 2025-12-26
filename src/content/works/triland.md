@@ -12,4 +12,4 @@ classes:
 order: 32
 home: true
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.
+

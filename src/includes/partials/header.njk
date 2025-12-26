@@ -1,5 +1,5 @@
-{% set pageCanonical = pageCanonical or (permalink or "index.html") %}
-{% set pageOgImage = pageOgImage or "/assets/img/open.png" %}
+{% set pageCanonical = pageCanonical or (permalink or "https://przemekmiros.pl/") %}
+{% set pageOgImage = pageOgImage or "https://przemekmiros.pl/assets/img/open.png" %}
 {% set barbaNamespace = barbaNamespace or "home" %}
 {% set mainId = mainId or "home" %} 
 {% set currentPage = currentPage or barbaNamespace %}
@@ -14,13 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ title }} - Przemek Miros Strony Internetowe</title>
     <meta name="description" content="{{ pageDescription }}" />
-    <meta property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:title" content="Przemek Miros Strony Internetowe" />
     <meta property="og:description" content="{{ pageDescription }}" />
     <meta property="og:image" content="{{ pageOgImage }}" />
     <meta property="og:site_name" content="Przemek Miros" />
-    <meta property="og:locale" content="en" />
-    <meta property="og:type" content="website" />
-    <meta property="twitter:title" content="{{ pageTitle }}" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:type" content="website" /> 
+    <meta property="twitter:title" content="Przemek Miros Strony Internetowe" />
     <meta property="twitter:description" content="{{ pageDescription }}" />
     <meta property="twitter:image" content="{{ pageOgImage }}" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -43,15 +43,15 @@
           <div class="rounded-div"></div>
         </div>
         <div class="loading-words">
-          <h2 class="home-active home-active-first">Cześć <div class="dot"></div>
+          <h2 class="home-active home-active-first">Witaj <div class="dot"></div>
           </h2>
-          <h2 class="home-active">Bonjour <div class="dot"></div>
+          <h2 class="home-active">Tworzę <div class="dot"></div>
           </h2>
-          <h2 class="home-active">Ciao <div class="dot"></div>
+          <h2 class="home-active">Nowoczesne <div class="dot"></div>
           </h2>
-          <h2 class="home-active">OlÆó <div class="dot"></div>
+          <h2 class="home-active">Strony <div class="dot"></div>
           </h2>
-          <h2 class="home-active-last">Hallo <div class="dot"></div>
+          <h2 class="home-active-last">Internetowe <div class="dot"></div>
           </h2>
           <h2 class="active">{{ loadingLabel }} <div class="dot"></div>
           </h2>

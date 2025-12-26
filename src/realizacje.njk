@@ -121,7 +121,7 @@ barbaNamespace: "realizacje"
         {% for work in worksList %}
         <li class="{{ (work.data.classes or []) | join(' ') }}">
           <div class="stripe animate"></div>
-          <a href="{{ work.data.href }}" class="row" target="_blank">
+          <a href="{{ work.data.href }}" class="row" target="_blank" rel="nofollow">
             <div class="flex-col">
               <h4>
                 <span>{{ work.data.tileTitle or work.data.title }}</span>

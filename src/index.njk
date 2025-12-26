@@ -175,7 +175,7 @@ pageDescription: Pomagam firmom budować strony, które wyglądają dobrze i spr
             {% for work in works.slice(0, 5) %}
             <li class="{{ (work.data.classes or []) | join(' ') }}">
               <div class="stripe animate"></div>
-              <a href="{{ work.data.href }}" class="row" target="_blank">
+              <a href="{{ work.data.href }}" class="row" target="_blank" rel="nofollow">
                 <div class="flex-col">
                   <h4>
                     <span>{{ work.data.title }}</span>
