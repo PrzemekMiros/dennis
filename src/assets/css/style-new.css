@@ -762,7 +762,7 @@ main.touch .main-wrap {
    background-color: #010306;
    background-size: cover;
    background-position: center;
-   opacity: .65;
+   opacity: .6;
    z-index: 1;
 }
 
@@ -909,10 +909,20 @@ main.touch .main-wrap {
    height: 2.5em;
    font-size: .8em;
 }
-
+.desk-none {
+   display: none;
+}
+.mob-none {
+   display: block;
+}
 
 @media screen and (max-width: 720px){
-
+   .mob-none {
+      display: none;
+   }
+   .desk-none {
+      display: block;
+   }
    .home-header {
       min-height: 110vh;
       min-height: calc(var(--vh, 1vh) * 110);
@@ -934,6 +944,10 @@ main.touch .main-wrap {
       top: -5%;
       height: 105%;
    }
+   
+.home-header .personal-image img {
+   width: 100%;
+}
 
    .home-header .big-name {
       position: absolute;
