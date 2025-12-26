@@ -12,4 +12,3 @@ classes:
 order: 8
 home: false
 ---
-Prezentacja projektu Angliki oparta na materiale graficznym z miniatury „angliki-thumb-big”.

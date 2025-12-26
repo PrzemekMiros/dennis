@@ -1,7 +1,7 @@
 ---
 title: "C7Med Rehabilitacja"
 href: "https://www.c7med.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i wdrożenie"
 year: 2021
 tileImage: "/content/works/img/moc-c7.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 12
 home: false
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

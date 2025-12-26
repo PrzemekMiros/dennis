@@ -1,7 +1,7 @@
 ---
 title: "CUS Grabów"
 href: "https://cusgrabow.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i kodownie"
 year: 2025
 tileImage: "/content/works/img/moc-cus.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 14
 home: false
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

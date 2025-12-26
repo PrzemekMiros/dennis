@@ -1,7 +1,7 @@
 ---
 title: "LDF Ubezpieczenia"
 href: "https://ubezpieczenia-stoczek.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i wdrożenie"
 year: 2024
 tileImage: "/content/works/img/ldf-mockup.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 33
 home: true
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

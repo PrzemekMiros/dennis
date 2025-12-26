@@ -1,7 +1,7 @@
 ---
 title: "Clientify"
 href: "http://clientify.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i wdrożenie"
 year: 2025
 tileImage: "/content/works/img/clientify-mockup.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 13
 home: false
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

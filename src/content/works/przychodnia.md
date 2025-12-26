@@ -1,7 +1,7 @@
 ---
 title: "PZOZ Grabów"
 href: "https://przychodniagrabow.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i kodowanie"
 year: 2023
 tileImage: "/content/works/img/przychodnia-thumb-big.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 25
 home: true
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

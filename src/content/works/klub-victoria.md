@@ -1,7 +1,7 @@
 ---
 title: "Victoria Grochów"
 href: "https://victoriagrochow.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i wdożenie"
 year: 2024
 tileImage: "/content/works/img/victoria-thumb-big.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 21
 home: true
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

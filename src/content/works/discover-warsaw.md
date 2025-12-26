@@ -1,7 +1,7 @@
 ---
 title: "Discover Warsaw"
 href: "https://discover-warsaw.com/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i kodowanie"
 year: 2025
 tileImage: "/content/works/img/moc-discover.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 4
 home: false
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.

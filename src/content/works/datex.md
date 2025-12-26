@@ -1,7 +1,7 @@
 ---
 title: "Datecs Pay"
 href: "https://datecspay.pl/"
-role: "Kodowanie i optymalizacja"
+role: "Projekt i wdrożenie"
 year: 2024
 tileImage: "/content/works/img/moc-datex.jpg"
 tileBg: "#101010"
@@ -12,4 +12,3 @@ classes:
 order: 3
 home: true
 ---
-Agencja Cosmos – cyfrowa opowieść z mocnym naciskiem na interakcję i unikatowe detale.
