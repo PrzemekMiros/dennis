@@ -458,7 +458,7 @@ video.overlay {
     position: relative;
     transform: rotate(0.001deg);
     pointer-events: none;
-    will-change: transform, color;
+    will-change: transform, color; 
 }
 
 .btn-click:hover {
